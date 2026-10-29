@@ -85,7 +85,7 @@ h2 { font-size: 48px; line-height: 1.12; letter-spacing: -1.5px; }
 .gift-heading .eyebrow > span { font-size: 20px; margin-right: 8px; vertical-align: middle; }
 .gift-heading h2 { margin: 17px 0 18px; font-size: 53px; }
 .gift-heading h2 em { color: #788254; }
-.gift-ticket { width: 755px; max-width: 100%; margin-top: 36px; display: flex; text-align: left; padding: 0; border: 1px solid #c8cdb5; background: var(--paper); border-radius: 6px; position: relative; box-shadow: 0 5px 0 #dce1ce, 0 13px 24px #47513107; transition: transform .25s, box-shadow .25s; }
+.gift-ticket { width: 755px; max-width: 100%; margin: 36px auto 0; display: flex; text-align: left; padding: 0; border: 1px solid #c8cdb5; background: var(--paper); border-radius: 6px; position: relative; box-shadow: 0 5px 0 #dce1ce, 0 13px 24px #47513107; transition: transform .25s, box-shadow .25s; }
 .gift-ticket:hover { transform: translateY(-5px) rotate(-.5deg); box-shadow: 0 8px 0 #dce1ce, 0 20px 30px #47513112; }
 .ticket-main { flex: 1; padding: 25px 31px 27px; }
 .ticket-label { display: flex; align-items: center; justify-content: space-between; font-size: 8px; letter-spacing: 1.8px; }
