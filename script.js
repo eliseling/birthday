@@ -73,8 +73,8 @@ dialog.addEventListener("close", () => {
 candle.addEventListener("click", () => {
   candle.classList.add("is-out");
   candle.disabled = true;
-  candle.setAttribute("aria-label", "Birthday candle blown out");
-  wishFeedback.textContent = "Wish made. Here’s hoping it finds its way to you. ♡";
+  candle.setAttribute("aria-label", "Bursdagslys blåst ut");
+  wishFeedback.textContent = "Ønsket er gjort. Håpar det finn vegen til deg. ♡";
   relight.hidden = false;
   relight.focus({ preventScroll: true });
   celebrate();
@@ -83,8 +83,8 @@ candle.addEventListener("click", () => {
 relight.addEventListener("click", () => {
   candle.classList.remove("is-out");
   candle.disabled = false;
-  candle.setAttribute("aria-label", "Blow out the birthday candle");
-  wishFeedback.textContent = "Psst… tap the candle to make your wish.";
+  candle.setAttribute("aria-label", "Blås ut bursdagslyset");
+  wishFeedback.textContent = "Psst… trykk på lyset for å ønskje deg noko.";
   relight.hidden = true;
   candle.focus({ preventScroll: true });
 });
