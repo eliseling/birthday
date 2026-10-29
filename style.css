@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=DM+Serif+Display:ital@0;1&family=Oooh+Baby&display=swap");
+
+:root {
+  color-scheme: light;
+  --paper: #f7f5ed;
+  --ink: #424b30;
+  --olive: #4a5436;
+  --muted: #757864;
+  --line: #d7d9c9;
+  --serif: "DM Serif Display", Georgia, serif;
+  --sans: "DM Sans", "Helvetica Neue", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 32px; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 20; opacity: .035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23000' filter='url(%23n)' opacity='.5' d='M0 0h180v180H0z'/%3E%3C/svg%3E"); }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; color: inherit; cursor: pointer; }
+a { color: inherit; text-decoration: none; }
+button:focus-visible, a:focus-visible { outline: 3px solid #aa783f; outline-offset: 6px; }
+button:disabled { cursor: default; }
+::selection { background: #d8ddbf; color: #303b24; }
+[hidden] { display: none !important; }
+.site-header { max-width: 1336px; margin: auto; height: 110px; padding: 0 64px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.wordmark { font-family: var(--serif); font-size: 35px; letter-spacing: -1.6px; display: flex; align-items: center; gap: 4px; }
+.wordmark-star { font-size: 26px; font-family: Georgia, serif; margin: -7px 0 0 2px; }
+.header-note, .header-link { font-size: 10px; font-weight: 600; letter-spacing: 1.8px; }
+.header-note { padding-left: 35px; color: var(--muted); }
+.header-link { letter-spacing: .3px; border-bottom: 1px solid var(--ink); padding: 8px 0; font-size: 12px; }
+.header-link span { margin-left: 22px; font-size: 18px; font-weight: 400; }
+.hero { max-width: 1208px; margin: 33px auto 79px; padding: 0 64px; display: grid; grid-template-columns: 1fr 1fr; gap: 68px; align-items: center; }
+.eyebrow { font-size: 10px; font-weight: 600; letter-spacing: 2px; display: block; line-height: 1.7; }
+.hero .eyebrow { letter-spacing: 1.65px; display: flex; align-items: center; gap: 10px; }
+.tiny-star { font-size: 19px; }
+h1, h2, p { margin: 0; }
+h1, h2 { font-family: var(--serif); font-weight: 400; }
+h1 { position: relative; font-size: clamp(70px, 7.7vw, 106px); letter-spacing: -4px; line-height: .99; margin: 24px 0 25px; width: fit-content; }
+h1 em, h2 em { font-weight: 400; }
+h1 em { color: #7d8758; }
+.title-spark { position: absolute; right: -72px; bottom: 10px; font-size: 76px; font-family: Georgia, serif; font-weight: 400; color: #8e956d; }
+.hero-description { font-size: 14px; line-height: 1.9; color: #737663; }
+.button { display: inline-flex; align-items: center; justify-content: space-between; gap: 28px; border: 1px solid var(--olive); border-radius: 3px; padding: 17px 22px; font-size: 12px; font-weight: 500; transition: background .2s, transform .2s, box-shadow .2s; }
+.button-dark { background: var(--olive); color: var(--paper); }
+.button-dark:hover { background: #343e25; transform: translateY(-2px); box-shadow: 0 5px 15px #28321b18; }
+.button span { font-size: 19px; font-weight: 400; line-height: 1; }
+.hero .button { margin-top: 27px; }
+.handwritten { font-family: "Oooh Baby", "Brush Script MT", cursive; font-weight: 400; }
+.hero-note { font-size: 23px; margin: 14px 0 0 15px; color: #828467; transform: rotate(-4deg); }
+.hero-note span { margin-left: 4px; }
+.hero-art { position: relative; padding-top: 18px; margin-right: 9px; }
+.postcard { background: #ecebdb; border: 1px solid #d5d8c5; padding: 15px 15px 0; transform: rotate(3deg); box-shadow: 7px 10px 0 #e9e8dd, 0 15px 35px #41482c0a; }
+.postcard-top, .postcard-bottom { display: flex; justify-content: space-between; align-items: center; font-size: 8px; font-weight: 500; letter-spacing: 1.8px; }
+.postcard-top { padding: 0 2px 12px; }
+.postcard-top > :last-child { font-size: 14px; }
+.landscape { display: block; width: 100%; height: auto; border: 1px solid #b7bf9c; background: #dbe1c8; }
+.postcard-bottom { padding: 13px 3px 14px; letter-spacing: 1.5px; font-size: 7px; }
+.postcard-heart { font-size: 19px; }
+.age-seal { position: absolute; top: -23px; right: -42px; width: 117px; height: 117px; z-index: 2; border-radius: 50%; background: var(--olive); color: #f0eedc; transform: rotate(13deg); box-shadow: 0 0 0 5px var(--paper); display: grid; place-items: center; }
+.age-seal svg { position: absolute; inset: 0; width: 100%; height: 100%; fill: currentColor; font: 9px var(--sans); letter-spacing: 1.5px; }
+.age-seal > span { font-family: var(--serif); font-size: 46px; padding-bottom: 3px; }
+.art-note { position: absolute; bottom: -54px; left: 50px; font-size: 29px; white-space: nowrap; transform: rotate(-6deg); }
+.art-arrow { position: absolute; bottom: -65px; right: 7px; width: 76px; transform: rotate(-20deg); color: #8a8e70; }
+.celebration-strip { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 22px 40px; display: flex; justify-content: center; align-items: center; gap: clamp(20px, 4vw, 64px); font-size: 10px; font-weight: 500; letter-spacing: 1.9px; background: #eeefe4; }
+.strip-star { font-size: 22px; line-height: 1; color: #7d875b; }
+.last-star { display: none; }
+.birthday-wish { max-width: 1032px; padding: 77px 64px 72px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 50px; }
+h2 { font-size: 48px; line-height: 1.12; letter-spacing: -1.5px; }
+.wish-intro h2 { margin: 14px 0 17px; }
+.wish-intro p, .gift-heading p { font-size: 13px; line-height: 1.9; color: var(--muted); }
+.wish-interaction { text-align: center; min-width: 270px; position: relative; }
+.candle-button { background: transparent; border: 0; padding: 0; width: 160px; height: 151px; transition: transform .2s; }
+.candle-button:not(:disabled):hover { transform: translateY(-4px) rotate(-3deg); }
+.candle-button svg { width: 100%; height: 100%; overflow: visible; }
+.candle-flame { transform-origin: 90px 53px; animation: flicker 1.7s ease-in-out infinite alternate; }
+.candle-smoke { opacity: 0; }
+.candle-button.is-out .candle-flame { display: none; }
+.candle-button.is-out .candle-smoke { animation: smoke 2s ease-out both; }
+.wish-feedback { font-size: 10px; color: var(--muted); margin-top: 4px; letter-spacing: .2px; }
+.text-button { border: 0; background: none; padding: 8px 0; font-size: 11px; border-bottom: 1px solid #aeb39b; }
+.text-button:hover { color: #7d8758; }
+.relight { display: block; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); white-space: nowrap; }
+.relight span { margin-left: 6px; }
+.gift-section { background: #e9ecdf; border-top: 1px solid #dfe3d2; border-bottom: 1px solid #dfe3d2; padding: 65px 24px 45px; text-align: center; scroll-margin-top: 20px; }
+.gift-heading .eyebrow > span { font-size: 20px; margin-right: 8px; vertical-align: middle; }
+.gift-heading h2 { margin: 17px 0 18px; font-size: 53px; }
+.gift-heading h2 em { color: #788254; }
+.gift-ticket { width: 755px; max-width: 100%; margin-top: 36px; display: flex; text-align: left; padding: 0; border: 1px solid #c8cdb5; background: var(--paper); border-radius: 6px; position: relative; box-shadow: 0 5px 0 #dce1ce, 0 13px 24px #47513107; transition: transform .25s, box-shadow .25s; }
+.gift-ticket:hover { transform: translateY(-5px) rotate(-.5deg); box-shadow: 0 8px 0 #dce1ce, 0 20px 30px #47513112; }
+.ticket-main { flex: 1; padding: 25px 31px 27px; }
+.ticket-label { display: flex; align-items: center; justify-content: space-between; font-size: 8px; letter-spacing: 1.8px; }
+.ticket-label > span { font-size: 18px; }
+.ticket-destination { display: block; font-family: var(--serif); font-size: 33px; line-height: 1.13; letter-spacing: -.5px; margin-top: 13px; }
+.ticket-destination em { color: #7a845c; }
+.ticket-details { display: flex; gap: 39px; margin-top: 23px; }
+.ticket-details > span { display: flex; flex-direction: column; font-size: 10px; gap: 7px; }
+.detail-label { color: #8b8d7a; font-size: 7px; letter-spacing: 1.4px; }
+.ticket-stub { width: 157px; flex-shrink: 0; border-left: 1px dashed #b6bca2; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 16px; background: #f0f0e5; border-radius: 0 6px 6px 0; position: relative; }
+.ticket-stub::before, .ticket-stub::after { content: ""; position: absolute; width: 20px; height: 11px; background: #e9ecdf; border: 1px solid #c8cdb5; left: -11px; }
+.ticket-stub::before { top: -1px; border-top: 0; border-radius: 0 0 12px 12px; }
+.ticket-stub::after { bottom: -1px; border-bottom: 0; border-radius: 12px 12px 0 0; }
+.ticket-stub svg { width: 37px; height: 37px; }
+.ticket-stub > span { font-size: 9px; letter-spacing: 1.6px; line-height: 1.7; }
+.ticket-stub .stub-arrow { font-size: 22px; line-height: 1; }
+.gift-note { font-size: 25px; color: #7e8667; margin-top: 26px; transform: rotate(-3deg); }
+.closing { padding: 60px 24px 54px; text-align: center; }
+.closing-flower { font-size: 38px; color: #7e885e; display: block; margin-bottom: 17px; }
+.closing p { font-family: var(--serif); font-size: 32px; line-height: 1.3; letter-spacing: -.6px; }
+.closing p em { color: #7a8458; }
+.closing .eyebrow { margin-top: 23px; font-size: 8px; letter-spacing: 1.8px; }
+.closing .text-button { margin-top: 20px; color: #7c8369; font-size: 10px; }
+.closing .text-button span { margin-left: 10px; }
+footer { border-top: 1px solid var(--line); max-width: 1208px; margin: auto; padding: 24px 42px; display: flex; justify-content: space-between; gap: 24px; font-size: 8px; color: #8b8e79; letter-spacing: 1.4px; }
+footer span span { margin-left: 13px; font-size: 14px; }
+dialog { color: var(--ink); background: var(--paper); padding: 38px 44px 36px; width: 540px; max-width: calc(100% - 32px); max-height: calc(100dvh - 40px); border: 1px solid #b6bea0; border-radius: 8px; text-align: center; overflow: auto; box-shadow: 0 25px 100px #1f281940; }
+dialog[open] { animation: modal-in .35s ease-out; }
+dialog::backdrop { background: #29321fd1; backdrop-filter: blur(7px); }
+.dialog-close { position: absolute; right: 13px; top: 10px; width: 36px; height: 36px; border: 0; background: transparent; font-size: 29px; color: var(--muted); border-radius: 50%; }
+.dialog-close:hover { background: #e5e8d8; }
+.reveal-emblem { width: 100px; height: 76px; margin: 0 auto 15px; color: #7d8758; }
+.reveal-emblem svg { width: 100%; height: 100%; }
+dialog h2 { margin: 14px 0 23px; font-size: 44px; }
+dialog h2 em { color: #7d8758; }
+.game-name { padding: 22px 12px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #edefe3; display: flex; flex-direction: column; gap: 3px; }
+.game-name > span:first-child { font-size: 11px; font-weight: 600; letter-spacing: 4px; }
+.game-name strong { font-family: var(--serif); font-size: 39px; font-weight: 400; }
+.game-subtitle { font-size: 7px; letter-spacing: 1.2px; margin-top: 6px; }
+#reveal-description { font-size: 13px; line-height: 1.9; color: #737961; margin: 22px 0; }
+#reveal-description strong { font-weight: 600; }
+.reveal-footer { display: flex; align-items: center; justify-content: center; gap: 17px; margin-bottom: 25px; }
+.reveal-footer > :first-child { font-size: 8px; letter-spacing: 1.3px; }
+.reveal-footer .handwritten { font-size: 26px; }
+dialog .button { justify-content: center; width: 100%; }
+body.dialog-open { overflow: hidden; }
+.confetti { position: fixed; inset: 0; pointer-events: none; z-index: 50; overflow: hidden; }
+.confetti-piece { position: absolute; top: -25px; left: var(--x); width: var(--size); height: calc(var(--size) * .55); background: var(--color); border-radius: 1px; animation: confetti-fall var(--duration) var(--delay) linear both; }
+@keyframes flicker { from { transform: rotate(-5deg) scale(.94, 1); } to { transform: rotate(5deg) scale(1.05, .96); } }
+@keyframes smoke { 0% { opacity: 0; transform: translateY(3px); } 25% { opacity: .7; } 100% { opacity: 0; transform: translateY(-20px); } }
+@keyframes modal-in { from { opacity: 0; transform: translateY(20px) scale(.97); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes confetti-fall { 0% { transform: translate3d(0, -20px, 0) rotate(0); opacity: 1; } 85% { opacity: 1; } 100% { transform: translate3d(var(--drift), 105dvh, 0) rotate(var(--spin)); opacity: 0; } }
+
+@media (min-width: 1450px) {
+  .hero { margin-top: 55px; margin-bottom: 94px; }
+}
+@media (max-width: 1000px) {
+  .site-header { padding: 0 40px; height: 95px; }
+  .hero { padding: 0 45px; gap: 40px; margin-top: 28px; }
+  h1 { font-size: 84px; }
+  .hero .eyebrow { font-size: 8px; letter-spacing: 1px; }
+  .title-spark { right: -50px; font-size: 55px; }
+  .age-seal { width: 95px; height: 95px; right: -24px; top: -17px; }
+  .age-seal > span { font-size: 39px; }
+  .art-note { font-size: 25px; left: 20px; bottom: -48px; }
+  .art-arrow { width: 58px; }
+  .postcard-top { font-size: 6px; letter-spacing: 1.2px; }
+  .postcard-bottom { font-size: 6px; letter-spacing: .7px; }
+  .celebration-strip { gap: 26px; font-size: 8px; letter-spacing: 1.4px; }
+  .birthday-wish { padding-left: 55px; padding-right: 55px; gap: 22px; }
+  .wish-intro h2 { font-size: 40px; }
+  .wish-interaction { min-width: 240px; }
+}
+@media (max-width: 700px) {
+  .site-header { height: 83px; padding: 0 24px; }
+  .wordmark { font-size: 31px; }
+  .header-note { display: none; }
+  .header-link { font-size: 11px; }
+  .hero { grid-template-columns: minmax(0, 1fr); margin: 25px auto 77px; padding: 0 30px; gap: 58px; max-width: 500px; }
+  .hero-copy { padding: 0 3px; }
+  .hero .eyebrow { font-size: 9px; letter-spacing: 1.3px; }
+  h1 { font-size: clamp(64px, 20.25vw, 100px); margin-top: 22px; letter-spacing: -3.5px; }
+  .title-spark { right: -44px; font-size: 54px; bottom: 6px; }
+  .hero-description { font-size: 13px; }
+  .hero .button { margin-top: 23px; }
+  .hero-note { font-size: 24px; margin-left: 12px; }
+  .hero-art { margin: 0 17px 0 3px; padding-top: 0; }
+  .age-seal { width: 105px; height: 105px; right: -28px; top: -30px; }
+  .age-seal > span { font-size: 43px; }
+  .postcard-top { font-size: 7px; letter-spacing: 1.5px; }
+  .postcard-bottom { font-size: 6px; letter-spacing: 1.1px; }
+  .art-note { left: 25px; font-size: 27px; bottom: -51px; }
+  .art-arrow { right: -9px; bottom: -59px; }
+  .celebration-strip { padding: 19px 18px; gap: 16px; flex-wrap: wrap; font-size: 8px; letter-spacing: 1px; }
+  .celebration-strip > span:nth-child(5) { display: none; }
+  .celebration-strip > span:nth-child(4) { display: none; }
+  .strip-star { font-size: 20px; }
+  .birthday-wish { padding: 54px 24px 56px; flex-direction: column; gap: 17px; text-align: center; }
+  .wish-intro h2 { font-size: 41px; margin-top: 12px; }
+  .wish-intro p { font-size: 12px; }
+  .wish-interaction { padding-bottom: 20px; }
+  .candle-button { width: 148px; height: 140px; }
+  .relight { top: calc(100% - 15px); }
+  .gift-section { padding: 48px 20px 36px; }
+  .gift-heading .eyebrow { font-size: 8px; letter-spacing: 1.3px; }
+  .gift-heading h2 { font-size: 44px; margin-top: 16px; }
+  .gift-heading p { font-size: 12px; }
+  .gift-ticket { width: 100%; margin-top: 29px; max-width: 420px; }
+  .ticket-main { padding: 22px 17px; }
+  .ticket-label { font-size: 6px; letter-spacing: 1px; }
+  .ticket-destination { font-size: 27px; margin-top: 15px; }
+  .ticket-details { flex-wrap: wrap; gap: 17px 24px; margin-top: 22px; }
+  .ticket-details > span { font-size: 9px; gap: 5px; }
+  .detail-label { font-size: 6px; letter-spacing: 1px; }
+  .ticket-stub { width: 82px; gap: 22px; }
+  .ticket-stub svg { width: 30px; height: 30px; }
+  .ticket-stub > span { font-size: 7px; letter-spacing: .8px; }
+  .gift-note { font-size: 23px; }
+  .closing { padding-top: 44px; padding-bottom: 40px; }
+  .closing p { font-size: 29px; }
+  footer { margin: 0 24px; padding: 21px 0; font-size: 6px; letter-spacing: .8px; align-items: center; }
+  footer > :last-child { max-width: 145px; line-height: 1.9; text-align: right; }
+  footer span span { margin-left: 3px; font-size: 11px; }
+  dialog { padding: 31px 24px 25px; }
+  dialog h2 { font-size: 38px; margin-bottom: 20px; }
+  .reveal-emblem { height: 60px; margin-bottom: 10px; }
+  .game-name { padding: 17px 10px; }
+  .game-name strong { font-size: 35px; }
+  #reveal-description { font-size: 12px; margin: 18px 0; }
+  .reveal-footer { gap: 11px; margin-bottom: 20px; }
+  .reveal-footer .handwritten { font-size: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .confetti-piece { display: none; }
+}
